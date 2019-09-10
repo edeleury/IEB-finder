@@ -1,11 +1,9 @@
 # IEB_finder #
----------------
 
 Predicts Intron-Exon Boundaries (IEB) on *de novo* transcript sequences using result of mapping genomic reads directly onto coding sequences (CDS). Tool principle is described in the Deleury et al. 2019 (doi:[10.1101/583534](https://doi.org/10.1101/583534)).
 
 
 ## *Description*
----------------
 
 These scripts allow the identification of Intron-Exon Boundaries (IEB) on transcript sequences as described in Deleury et al. 2019 (doi:[10.1101/583534](https://doi.org/10.1101/583534)). Briefly, the method is based solely on the direct mapping of __genomic reads__ to __the CDS sequences__, by allowing reads to map over less than their full length (i.e. local alignment). Thus, a genomic read with both part of an exon and its flanking sequences (intron or UTR) will start mapping to the corresponding exon in the CDS sequence, and stop mapping at the exon end ([Conklin et al. 2013](http://www.ehu.eus/cs-ikerbasque/conklin/papers/iwbbio13.pdf)). This will result in the generation of a particular signal if we focus, for a given position, on the number of reads that either begin or end their local alignment at that position (hereafter referred to as *nbBE*). Along a covered exon, *nbBE* should be much lower than the coverage rate, except at the end of the exon, where we should observe a large increase in *nbBE* to a value theoretically equal to the coverage (Fig. 1A). This strong increase in *nbBE* should occur either at the base at the exact end of the exon (Fig. 1A), or a few bases away if the start of the intron sequence is, by chance, highly similar to the start of the next exon sequence on the CDS (Fig. 1B). In this second case, it creates an abnormally inflated estimate of coverage locally for a few bases at the boundary of the following exon.
 
@@ -29,14 +27,12 @@ We propose an additional script to graphically visualize on one particular CDS t
 
 
 ## *Requierements*
-------------------
 
 - perl 5 with the packages : `Getopt::Long`, `Statistics::Descriptive`, `libgd-perl` (optionnal)
 - for the read alignment step we propose to use `[BOWTIE2](http://bowtie-bio.sourceforge.net/bowtie2/manual.shtml)` and `[samtools](http://samtools.sourceforge.net/)`
 
 
 ## *Usage*
-------------------
 
 #### Step 1 :  collect_CDS_infos.pl
 
@@ -276,7 +272,6 @@ And here is the picture if the IE structure is not known:
 
 
 ## *References*
-------------------
 
 - Deleury, E., Guillemaud, T., Blin, A. & Lombaert, E. 2019. An evaluation of pool-sequencing transcriptome-based exon capture for population genomics in non-model species. *bioRxiv* doi:[10.1101/583534](https://doi.org/10.1101/583534).
 - Conklin, D., Montes, I., Albaina, A., and Estonba, A. 2013. Improved conversion rates for SNP genotyping of nonmodel organisms. *In International Work-Conference on Bioinformatics and Biomedical Engineering (IWBBIO)*, pages [127-134](http://www.ehu.eus/cs-ikerbasque/conklin/papers/iwbbio13.pdf), Granada, Spain.
