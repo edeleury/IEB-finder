@@ -1,10 +1,10 @@
-#IEB_finder#
+# IEB_finder #
 ---------------
 
 Predicts Intron-Exon Boundaries (IEB) on *de novo* transcript sequences using result of mapping genomic reads directly onto coding sequences (CDS). Tool principle is described in the Deleury et al. 2019 (doi:[10.1101/583534](https://doi.org/10.1101/583534)).
 
 
-##*Description*
+## *Description*
 ---------------
 
 These scripts allow the identification of Intron-Exon Boundaries (IEB) on transcript sequences as described in Deleury et al. 2019 (doi:[10.1101/583534](https://doi.org/10.1101/583534)). Briefly, the method is based solely on the direct mapping of __genomic reads__ to __the CDS sequences__, by allowing reads to map over less than their full length (i.e. local alignment). Thus, a genomic read with both part of an exon and its flanking sequences (intron or UTR) will start mapping to the corresponding exon in the CDS sequence, and stop mapping at the exon end ([Conklin et al. 2013](http://www.ehu.eus/cs-ikerbasque/conklin/papers/iwbbio13.pdf)). This will result in the generation of a particular signal if we focus, for a given position, on the number of reads that either begin or end their local alignment at that position (hereafter referred to as *nbBE*). Along a covered exon, *nbBE* should be much lower than the coverage rate, except at the end of the exon, where we should observe a large increase in *nbBE* to a value theoretically equal to the coverage (Fig. 1A). This strong increase in *nbBE* should occur either at the base at the exact end of the exon (Fig. 1A), or a few bases away if the start of the intron sequence is, by chance, highly similar to the start of the next exon sequence on the CDS (Fig. 1B). In this second case, it creates an abnormally inflated estimate of coverage locally for a few bases at the boundary of the following exon.
@@ -28,17 +28,17 @@ Briefly, the scripts must be run in three steps (in addition to the read alignme
 We propose an additional script to graphically visualize on one particular CDS the available data (coverage, *nbBE*), IE structure if known, result of the IEB prediction. This can help to analyze why an IEB is not predicted in case you know the IE structure of the CDS for example.
 
 
-##*Requierements*
+## *Requierements*
 ------------------
 
 - perl 5 with the packages : `Getopt::Long`, `Statistics::Descriptive`, `libgd-perl` (optionnal)
 - for the read alignment step we propose to use `[BOWTIE2](http://bowtie-bio.sourceforge.net/bowtie2/manual.shtml)` and `[samtools](http://samtools.sourceforge.net/)`
 
 
-##*Usage*
+## *Usage*
 ------------------
 
-####Step 1 :  collect_CDS_infos.pl
+#### Step 1 :  collect_CDS_infos.pl
 
 This script calculates the length of each CDS sequence. If the intron-exon structure of CDS is known (GFF file available), the script checks the correct correspondence of the information contained in the GFF file with CDS in fasta format. Alert messages will be returned if this is not the case. It may then be necessary to adapt your CDS sequences (to ensure a correct evaluation of the prediction method). Type `perl collect_CDS_infos.pl -h` to show the help message:
 
@@ -87,7 +87,7 @@ head -3 test.csv
 ```
 
 
-####Step 2 : Mapping genomic reads on CDS sequences
+#### Step 2 : Mapping genomic reads on CDS sequences
 
 
 Genomic reads must be aligned on CDS sequences by allowing the reads not to align over its entire length with your favorite mapper. For example, here we give the command lines using BOWTIE2 (Langmead et al. 2012) with the *local* option. The *genomicReads.fq* is not provided. Only the output alignment file is provided for the rest of our example.
@@ -116,7 +116,7 @@ rm bowtie2_align.sam bowtie2_align.bam bowtie2_align.sorted.bam CDS.*
 
 
 
-####Step 3 : sam2eachpos_perCDS.pl
+#### Step 3 : sam2eachpos_perCDS.pl
 
 
 This script creates a directory per covered CDS in the output directory specified by the user. For each CDS, it rewrites a SAM file with all the reads that map to the CDS, then transforms it into an `eachpos` file. This `eachpos` file lists a number of features at each CDS position. A line in the file corresponds to a CDS position, it indicates (i) if the position is an exon end (*EE*=1 otherwise 0, 0 at all positions if the CDS IE structure is unknown), (ii) the number of reads that map to that position (*COV*), (iii) the number of reads that start or end mapping (*nbBE*). It is this file that will be analyzed by the predictor in step 4.  Type `perl sam2eachpos_perCDS.pl -h` to show the help message:
@@ -176,7 +176,7 @@ vim predieb/ENSAMET00000000122/eachpos
 ```
 
 
-####Step 4 : IEB_predict.pl
+#### Step 4 : IEB_predict.pl
 
 
 For each CDS present in the directory indicated in the input, the script performs the IEB positions prediction as described in the Deleury et al. 2019 methods (doi: 10.1101/583534). If the IE structure of CDS is known, an assessment of the predictions can be calculated with option `-e 1` (default `-e 0`). Type `perl IEB_predict.pl -h` to show the help message:
@@ -231,7 +231,7 @@ vim predieb/ENSAMET00000000171/ENSAMET00000000171_eachpos__IEBpred_c4_x5_n3.csv
 
 ```
 
-####Script to graphically visualize predictions
+#### Script to graphically visualize predictions
 
 
 In some cases, it may be interesting to visualize as an image the features along the CDS sequence (coverage, nbBE) and the IEB predictions obtained. The script `qd_make_img_img_1_transcrit.pl` allows to build this image. Type `perl qd_make_img_1_transcrit.pl -h` to show the help message:
@@ -275,7 +275,7 @@ And here is the picture if the IE structure is not known:
 
 
 
-##*References*
+## *References*
 ------------------
 
 - Deleury, E., Guillemaud, T., Blin, A. & Lombaert, E. 2019. An evaluation of pool-sequencing transcriptome-based exon capture for population genomics in non-model species. *bioRxiv* doi:[10.1101/583534](https://doi.org/10.1101/583534).
