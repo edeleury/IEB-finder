@@ -1,0 +1,108 @@
+##gff-version 3
+##sequence-region   GL193435.1 1 696278
+##sequence-region   GL192389.1 1 3474040
+##sequence-region   GL192507.1 1 2301292
+##sequence-region   GL193435.1 1 696278
+##sequence-region   GL195138.1 1 75914
+##sequence-region   GL194105.1 1 347694
+#!genome-build Ensembl ailMel1
+#!genome-version ailMel1
+#!genome-date 2009-07
+#!genome-build-accession NCBI:GCA_000004335.1
+#!genebuild-last-updated 2011-12
+#!extract from the file ftp://ftp.ensembl.org/pub/release-96/gff3/ailuropoda_melanoleuca/Ailuropoda_melanoleuca.ailMel1.96.gff3.gz
+###
+GL193435.1	ensembl	mRNA	103616	140660	.	-	.	ID=transcript:ENSAMET00000000122;Parent=gene:ENSAMEG00000000111;Name=DCPS-201;biotype=protein_coding;transcript_id=ENSAMET00000000122;version=1
+GL193435.1	ensembl	exon	103616	103882	.	-	.	Parent=transcript:ENSAMET00000000122;Name=ENSAMEE00000001114;constitutive=1;ensembl_end_phase=0;ensembl_phase=0;exon_id=ENSAMEE00000001114;rank=6;version=1
+GL193435.1	ensembl	CDS	103616	103882	.	-	0	ID=CDS:ENSAMEP00000000118;Parent=transcript:ENSAMET00000000122;protein_id=ENSAMEP00000000118
+GL193435.1	ensembl	exon	105728	105838	.	-	.	Parent=transcript:ENSAMET00000000122;Name=ENSAMEE00000001109;constitutive=1;ensembl_end_phase=0;ensembl_phase=0;exon_id=ENSAMEE00000001109;rank=5;version=1
+GL193435.1	ensembl	CDS	105728	105838	.	-	0	ID=CDS:ENSAMEP00000000118;Parent=transcript:ENSAMET00000000122;protein_id=ENSAMEP00000000118
+GL193435.1	ensembl	exon	110923	111036	.	-	.	Parent=transcript:ENSAMET00000000122;Name=ENSAMEE00000001105;constitutive=1;ensembl_end_phase=0;ensembl_phase=0;exon_id=ENSAMEE00000001105;rank=4;version=1
+GL193435.1	ensembl	CDS	110923	111036	.	-	0	ID=CDS:ENSAMEP00000000118;Parent=transcript:ENSAMET00000000122;protein_id=ENSAMEP00000000118
+GL193435.1	ensembl	exon	116283	116428	.	-	.	Parent=transcript:ENSAMET00000000122;Name=ENSAMEE00000001099;constitutive=1;ensembl_end_phase=0;ensembl_phase=1;exon_id=ENSAMEE00000001099;rank=3;version=1
+GL193435.1	ensembl	CDS	116283	116428	.	-	2	ID=CDS:ENSAMEP00000000118;Parent=transcript:ENSAMET00000000122;protein_id=ENSAMEP00000000118
+GL193435.1	ensembl	exon	139128	139302	.	-	.	Parent=transcript:ENSAMET00000000122;Name=ENSAMEE00000001093;constitutive=1;ensembl_end_phase=1;ensembl_phase=0;exon_id=ENSAMEE00000001093;rank=2;version=1
+GL193435.1	ensembl	CDS	139128	139302	.	-	0	ID=CDS:ENSAMEP00000000118;Parent=transcript:ENSAMET00000000122;protein_id=ENSAMEP00000000118
+GL193435.1	ensembl	exon	140460	140660	.	-	.	Parent=transcript:ENSAMET00000000122;Name=ENSAMEE00000001088;constitutive=1;ensembl_end_phase=0;ensembl_phase=0;exon_id=ENSAMEE00000001088;rank=1;version=1
+GL193435.1	ensembl	CDS	140460	140660	.	-	0	ID=CDS:ENSAMEP00000000118;Parent=transcript:ENSAMET00000000122;protein_id=ENSAMEP00000000118
+GL192389.1	ensembl	mRNA	597820	619567	.	-	.	ID=transcript:ENSAMET00000000154;Parent=gene:ENSAMEG00000000140;Name=SCARA3-201;biotype=protein_coding;transcript_id=ENSAMET00000000154;version=1
+GL192389.1	ensembl	exon	597820	598268	.	-	.	Parent=transcript:ENSAMET00000000154;Name=ENSAMEE00000001453;constitutive=1;ensembl_end_phase=0;ensembl_phase=1;exon_id=ENSAMEE00000001453;rank=5;version=1
+GL192389.1	ensembl	CDS	597820	598268	.	-	2	ID=CDS:ENSAMEP00000000150;Parent=transcript:ENSAMET00000000154;protein_id=ENSAMEP00000000150
+GL192389.1	ensembl	exon	611403	612446	.	-	.	Parent=transcript:ENSAMET00000000154;Name=ENSAMEE00000001452;constitutive=1;ensembl_end_phase=1;ensembl_phase=1;exon_id=ENSAMEE00000001452;rank=4;version=1
+GL192389.1	ensembl	CDS	611403	612446	.	-	2	ID=CDS:ENSAMEP00000000150;Parent=transcript:ENSAMET00000000154;protein_id=ENSAMEP00000000150
+GL192389.1	ensembl	exon	613812	613910	.	-	.	Parent=transcript:ENSAMET00000000154;Name=ENSAMEE00000001448;constitutive=1;ensembl_end_phase=1;ensembl_phase=1;exon_id=ENSAMEE00000001448;rank=3;version=1
+GL192389.1	ensembl	CDS	613812	613910	.	-	2	ID=CDS:ENSAMEP00000000150;Parent=transcript:ENSAMET00000000154;protein_id=ENSAMEP00000000150
+GL192389.1	ensembl	exon	618138	618257	.	-	.	Parent=transcript:ENSAMET00000000154;Name=ENSAMEE00000001447;constitutive=1;ensembl_end_phase=1;ensembl_phase=1;exon_id=ENSAMEE00000001447;rank=2;version=1
+GL192389.1	ensembl	CDS	618138	618257	.	-	2	ID=CDS:ENSAMEP00000000150;Parent=transcript:ENSAMET00000000154;protein_id=ENSAMEP00000000150
+GL192389.1	ensembl	exon	619462	619567	.	-	.	Parent=transcript:ENSAMET00000000154;Name=ENSAMEE00000001445;constitutive=1;ensembl_end_phase=1;ensembl_phase=0;exon_id=ENSAMEE00000001445;rank=1;version=1
+GL192389.1	ensembl	CDS	619462	619567	.	-	0	ID=CDS:ENSAMEP00000000150;Parent=transcript:ENSAMET00000000154;protein_id=ENSAMEP00000000150
+GL192507.1	ensembl	mRNA	1130490	1173338	.	+	.	ID=transcript:ENSAMET00000000164;Parent=gene:ENSAMEG00000000146;biotype=protein_coding;transcript_id=ENSAMET00000000164;version=1
+GL192507.1	ensembl	exon	1130490	1130545	.	+	.	Parent=transcript:ENSAMET00000000164;Name=ENSAMEE00000001491;constitutive=1;ensembl_end_phase=2;ensembl_phase=0;exon_id=ENSAMEE00000001491;rank=1;version=1
+GL192507.1	ensembl	CDS	1130490	1130545	.	+	0	ID=CDS:ENSAMEP00000000160;Parent=transcript:ENSAMET00000000164;protein_id=ENSAMEP00000000160
+GL192507.1	ensembl	exon	1149877	1150142	.	+	.	Parent=transcript:ENSAMET00000000164;Name=ENSAMEE00000001492;constitutive=1;ensembl_end_phase=1;ensembl_phase=2;exon_id=ENSAMEE00000001492;rank=2;version=1
+GL192507.1	ensembl	CDS	1149877	1150142	.	+	1	ID=CDS:ENSAMEP00000000160;Parent=transcript:ENSAMET00000000164;protein_id=ENSAMEP00000000160
+GL192507.1	ensembl	exon	1151169	1151249	.	+	.	Parent=transcript:ENSAMET00000000164;Name=ENSAMEE00000001495;constitutive=1;ensembl_end_phase=1;ensembl_phase=1;exon_id=ENSAMEE00000001495;rank=3;version=1
+GL192507.1	ensembl	CDS	1151169	1151249	.	+	2	ID=CDS:ENSAMEP00000000160;Parent=transcript:ENSAMET00000000164;protein_id=ENSAMEP00000000160
+GL192507.1	ensembl	exon	1152550	1152759	.	+	.	Parent=transcript:ENSAMET00000000164;Name=ENSAMEE00000001498;constitutive=1;ensembl_end_phase=1;ensembl_phase=1;exon_id=ENSAMEE00000001498;rank=4;version=1
+GL192507.1	ensembl	CDS	1152550	1152759	.	+	2	ID=CDS:ENSAMEP00000000160;Parent=transcript:ENSAMET00000000164;protein_id=ENSAMEP00000000160
+GL192507.1	ensembl	exon	1154953	1155179	.	+	.	Parent=transcript:ENSAMET00000000164;Name=ENSAMEE00000001500;constitutive=1;ensembl_end_phase=0;ensembl_phase=1;exon_id=ENSAMEE00000001500;rank=5;version=1
+GL192507.1	ensembl	CDS	1154953	1155179	.	+	2	ID=CDS:ENSAMEP00000000160;Parent=transcript:ENSAMET00000000164;protein_id=ENSAMEP00000000160
+GL192507.1	ensembl	exon	1157302	1157388	.	+	.	Parent=transcript:ENSAMET00000000164;Name=ENSAMEE00000001502;constitutive=1;ensembl_end_phase=0;ensembl_phase=0;exon_id=ENSAMEE00000001502;rank=6;version=1
+GL192507.1	ensembl	CDS	1157302	1157388	.	+	0	ID=CDS:ENSAMEP00000000160;Parent=transcript:ENSAMET00000000164;protein_id=ENSAMEP00000000160
+GL192507.1	ensembl	exon	1162770	1162835	.	+	.	Parent=transcript:ENSAMET00000000164;Name=ENSAMEE00000001504;constitutive=1;ensembl_end_phase=0;ensembl_phase=0;exon_id=ENSAMEE00000001504;rank=7;version=1
+GL192507.1	ensembl	CDS	1162770	1162835	.	+	0	ID=CDS:ENSAMEP00000000160;Parent=transcript:ENSAMET00000000164;protein_id=ENSAMEP00000000160
+GL192507.1	ensembl	exon	1164397	1164588	.	+	.	Parent=transcript:ENSAMET00000000164;Name=ENSAMEE00000001509;constitutive=1;ensembl_end_phase=0;ensembl_phase=0;exon_id=ENSAMEE00000001509;rank=8;version=1
+GL192507.1	ensembl	CDS	1164397	1164588	.	+	0	ID=CDS:ENSAMEP00000000160;Parent=transcript:ENSAMET00000000164;protein_id=ENSAMEP00000000160
+GL192507.1	ensembl	exon	1168247	1168345	.	+	.	Parent=transcript:ENSAMET00000000164;Name=ENSAMEE00000001512;constitutive=1;ensembl_end_phase=0;ensembl_phase=0;exon_id=ENSAMEE00000001512;rank=9;version=1
+GL192507.1	ensembl	CDS	1168247	1168345	.	+	0	ID=CDS:ENSAMEP00000000160;Parent=transcript:ENSAMET00000000164;protein_id=ENSAMEP00000000160
+GL192507.1	ensembl	exon	1172638	1172748	.	+	.	Parent=transcript:ENSAMET00000000164;Name=ENSAMEE00000001513;constitutive=1;ensembl_end_phase=0;ensembl_phase=0;exon_id=ENSAMEE00000001513;rank=10;version=1
+GL192507.1	ensembl	CDS	1172638	1172748	.	+	0	ID=CDS:ENSAMEP00000000160;Parent=transcript:ENSAMET00000000164;protein_id=ENSAMEP00000000160
+GL192507.1	ensembl	exon	1173258	1173338	.	+	.	Parent=transcript:ENSAMET00000000164;Name=ENSAMEE00000001519;constitutive=1;ensembl_end_phase=0;ensembl_phase=0;exon_id=ENSAMEE00000001519;rank=11;version=1
+GL192507.1	ensembl	CDS	1173258	1173338	.	+	0	ID=CDS:ENSAMEP00000000160;Parent=transcript:ENSAMET00000000164;protein_id=ENSAMEP00000000160
+GL193435.1	ensembl	mRNA	683848	688781	.	+	.	ID=transcript:ENSAMET00000000171;Parent=gene:ENSAMEG00000000155;biotype=protein_coding;transcript_id=ENSAMET00000000171;version=1
+GL193435.1	ensembl	exon	683848	683908	.	+	.	Parent=transcript:ENSAMET00000000171;Name=ENSAMEE00000001551;constitutive=1;ensembl_end_phase=1;ensembl_phase=0;exon_id=ENSAMEE00000001551;rank=1;version=1
+GL193435.1	ensembl	CDS	683848	683908	.	+	0	ID=CDS:ENSAMEP00000000167;Parent=transcript:ENSAMET00000000171;protein_id=ENSAMEP00000000167
+GL193435.1	ensembl	exon	687783	687896	.	+	.	Parent=transcript:ENSAMET00000000171;Name=ENSAMEE00000001552;constitutive=1;ensembl_end_phase=1;ensembl_phase=1;exon_id=ENSAMEE00000001552;rank=2;version=1
+GL193435.1	ensembl	CDS	687783	687896	.	+	2	ID=CDS:ENSAMEP00000000167;Parent=transcript:ENSAMET00000000171;protein_id=ENSAMEP00000000167
+GL193435.1	ensembl	exon	688660	688781	.	+	.	Parent=transcript:ENSAMET00000000171;Name=ENSAMEE00000001555;constitutive=1;ensembl_end_phase=0;ensembl_phase=1;exon_id=ENSAMEE00000001555;rank=3;version=1
+GL193435.1	ensembl	CDS	688660	688781	.	+	2	ID=CDS:ENSAMEP00000000167;Parent=transcript:ENSAMET00000000171;protein_id=ENSAMEP00000000167
+GL195138.1	ensembl	mRNA	37239	62007	.	+	.	ID=transcript:ENSAMET00000000184;Parent=gene:ENSAMEG00000000166;Name=TAB3-201;biotype=protein_coding;transcript_id=ENSAMET00000000184;version=1
+GL195138.1	ensembl	exon	37239	37340	.	+	.	Parent=transcript:ENSAMET00000000184;Name=ENSAMEE00000001672;constitutive=1;ensembl_end_phase=0;ensembl_phase=0;exon_id=ENSAMEE00000001672;rank=1;version=1
+GL195138.1	ensembl	CDS	37239	37340	.	+	0	ID=CDS:ENSAMEP00000000179;Parent=transcript:ENSAMET00000000184;protein_id=ENSAMEP00000000179
+GL195138.1	ensembl	exon	41250	42711	.	+	.	Parent=transcript:ENSAMET00000000184;Name=ENSAMEE00000001677;constitutive=1;ensembl_end_phase=1;ensembl_phase=0;exon_id=ENSAMEE00000001677;rank=2;version=1
+GL195138.1	ensembl	CDS	41250	42711	.	+	0	ID=CDS:ENSAMEP00000000179;Parent=transcript:ENSAMET00000000184;protein_id=ENSAMEP00000000179
+GL195138.1	ensembl	exon	43591	43751	.	+	.	Parent=transcript:ENSAMET00000000184;Name=ENSAMEE00000001681;constitutive=1;ensembl_end_phase=0;ensembl_phase=1;exon_id=ENSAMEE00000001681;rank=3;version=1
+GL195138.1	ensembl	CDS	43591	43751	.	+	2	ID=CDS:ENSAMEP00000000179;Parent=transcript:ENSAMET00000000184;protein_id=ENSAMEP00000000179
+GL195138.1	ensembl	exon	49270	49363	.	+	.	Parent=transcript:ENSAMET00000000184;Name=ENSAMEE00000001684;constitutive=1;ensembl_end_phase=1;ensembl_phase=0;exon_id=ENSAMEE00000001684;rank=4;version=1
+GL195138.1	ensembl	CDS	49270	49363	.	+	0	ID=CDS:ENSAMEP00000000179;Parent=transcript:ENSAMET00000000184;protein_id=ENSAMEP00000000179
+GL195138.1	ensembl	exon	52071	52154	.	+	.	Parent=transcript:ENSAMET00000000184;Name=ENSAMEE00000001688;constitutive=1;ensembl_end_phase=1;ensembl_phase=1;exon_id=ENSAMEE00000001688;rank=5;version=1
+GL195138.1	ensembl	CDS	52071	52154	.	+	2	ID=CDS:ENSAMEP00000000179;Parent=transcript:ENSAMET00000000184;protein_id=ENSAMEP00000000179
+GL195138.1	ensembl	exon	58099	58200	.	+	.	Parent=transcript:ENSAMET00000000184;Name=ENSAMEE00000001691;constitutive=1;ensembl_end_phase=1;ensembl_phase=1;exon_id=ENSAMEE00000001691;rank=6;version=1
+GL195138.1	ensembl	CDS	58099	58200	.	+	2	ID=CDS:ENSAMEP00000000179;Parent=transcript:ENSAMET00000000184;protein_id=ENSAMEP00000000179
+GL195138.1	ensembl	exon	61859	62007	.	+	.	Parent=transcript:ENSAMET00000000184;Name=ENSAMEE00000001694;constitutive=1;ensembl_end_phase=0;ensembl_phase=1;exon_id=ENSAMEE00000001694;rank=7;version=1
+GL195138.1	ensembl	CDS	61859	62007	.	+	2	ID=CDS:ENSAMEP00000000179;Parent=transcript:ENSAMET00000000184;protein_id=ENSAMEP00000000179
+GL194105.1	ensembl	mRNA	8137	58334	.	+	.	ID=transcript:ENSAMET00000000316;Parent=gene:ENSAMEG00000000293;Name=KIF24-201;biotype=protein_coding;transcript_id=ENSAMET00000000316;version=1
+GL194105.1	ensembl	exon	8137	8651	.	+	.	Parent=transcript:ENSAMET00000000316;Name=ENSAMEE00000002792;constitutive=1;ensembl_end_phase=2;ensembl_phase=0;exon_id=ENSAMEE00000002792;rank=1;version=1
+GL194105.1	ensembl	CDS	8137	8651	.	+	0	ID=CDS:ENSAMEP00000000306;Parent=transcript:ENSAMET00000000316;protein_id=ENSAMEP00000000306
+GL194105.1	ensembl	exon	12633	12822	.	+	.	Parent=transcript:ENSAMET00000000316;Name=ENSAMEE00000002794;constitutive=1;ensembl_end_phase=0;ensembl_phase=2;exon_id=ENSAMEE00000002794;rank=2;version=1
+GL194105.1	ensembl	CDS	12633	12822	.	+	1	ID=CDS:ENSAMEP00000000306;Parent=transcript:ENSAMET00000000316;protein_id=ENSAMEP00000000306
+GL194105.1	ensembl	exon	17478	17575	.	+	.	Parent=transcript:ENSAMET00000000316;Name=ENSAMEE00000002796;constitutive=1;ensembl_end_phase=2;ensembl_phase=0;exon_id=ENSAMEE00000002796;rank=3;version=1
+GL194105.1	ensembl	CDS	17478	17575	.	+	0	ID=CDS:ENSAMEP00000000306;Parent=transcript:ENSAMET00000000316;protein_id=ENSAMEP00000000306
+GL194105.1	ensembl	exon	20644	20859	.	+	.	Parent=transcript:ENSAMET00000000316;Name=ENSAMEE00000002797;constitutive=1;ensembl_end_phase=2;ensembl_phase=2;exon_id=ENSAMEE00000002797;rank=4;version=1
+GL194105.1	ensembl	CDS	20644	20859	.	+	1	ID=CDS:ENSAMEP00000000306;Parent=transcript:ENSAMET00000000316;protein_id=ENSAMEP00000000306
+GL194105.1	ensembl	exon	25377	25464	.	+	.	Parent=transcript:ENSAMET00000000316;Name=ENSAMEE00000002801;constitutive=1;ensembl_end_phase=0;ensembl_phase=2;exon_id=ENSAMEE00000002801;rank=5;version=1
+GL194105.1	ensembl	CDS	25377	25464	.	+	1	ID=CDS:ENSAMEP00000000306;Parent=transcript:ENSAMET00000000316;protein_id=ENSAMEP00000000306
+GL194105.1	ensembl	exon	34455	34576	.	+	.	Parent=transcript:ENSAMET00000000316;Name=ENSAMEE00000002804;constitutive=1;ensembl_end_phase=2;ensembl_phase=0;exon_id=ENSAMEE00000002804;rank=6;version=1
+GL194105.1	ensembl	CDS	34455	34576	.	+	0	ID=CDS:ENSAMEP00000000306;Parent=transcript:ENSAMET00000000316;protein_id=ENSAMEP00000000306
+GL194105.1	ensembl	exon	35413	35518	.	+	.	Parent=transcript:ENSAMET00000000316;Name=ENSAMEE00000002806;constitutive=1;ensembl_end_phase=0;ensembl_phase=2;exon_id=ENSAMEE00000002806;rank=7;version=1
+GL194105.1	ensembl	CDS	35413	35518	.	+	1	ID=CDS:ENSAMEP00000000306;Parent=transcript:ENSAMET00000000316;protein_id=ENSAMEP00000000306
+GL194105.1	ensembl	exon	47206	47277	.	+	.	Parent=transcript:ENSAMET00000000316;Name=ENSAMEE00000002811;constitutive=1;ensembl_end_phase=0;ensembl_phase=0;exon_id=ENSAMEE00000002811;rank=8;version=1
+GL194105.1	ensembl	CDS	47206	47277	.	+	0	ID=CDS:ENSAMEP00000000306;Parent=transcript:ENSAMET00000000316;protein_id=ENSAMEP00000000306
+GL194105.1	ensembl	exon	49758	49867	.	+	.	Parent=transcript:ENSAMET00000000316;Name=ENSAMEE00000002815;constitutive=1;ensembl_end_phase=2;ensembl_phase=0;exon_id=ENSAMEE00000002815;rank=9;version=1
+GL194105.1	ensembl	CDS	49758	49867	.	+	0	ID=CDS:ENSAMEP00000000306;Parent=transcript:ENSAMET00000000316;protein_id=ENSAMEP00000000306
+GL194105.1	ensembl	exon	53731	55962	.	+	.	Parent=transcript:ENSAMET00000000316;Name=ENSAMEE00000002817;constitutive=1;ensembl_end_phase=2;ensembl_phase=2;exon_id=ENSAMEE00000002817;rank=10;version=1
+GL194105.1	ensembl	CDS	53731	55962	.	+	1	ID=CDS:ENSAMEP00000000306;Parent=transcript:ENSAMET00000000316;protein_id=ENSAMEP00000000306
+GL194105.1	ensembl	exon	57105	57198	.	+	.	Parent=transcript:ENSAMET00000000316;Name=ENSAMEE00000002820;constitutive=1;ensembl_end_phase=0;ensembl_phase=2;exon_id=ENSAMEE00000002820;rank=11;version=1
+GL194105.1	ensembl	CDS	57105	57198	.	+	1	ID=CDS:ENSAMEP00000000306;Parent=transcript:ENSAMET00000000316;protein_id=ENSAMEP00000000306
+GL194105.1	ensembl	exon	58197	58334	.	+	.	Parent=transcript:ENSAMET00000000316;Name=ENSAMEE00000002823;constitutive=1;ensembl_end_phase=0;ensembl_phase=0;exon_id=ENSAMEE00000002823;rank=12;version=1
+GL194105.1	ensembl	CDS	58197	58334	.	+	0	ID=CDS:ENSAMEP00000000306;Parent=transcript:ENSAMET00000000316;protein_id=ENSAMEP00000000306
