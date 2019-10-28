@@ -301,59 +301,6 @@ sub calcul_mean_from_array
 
 
 
-# by emeline.deleury@inra.fr
-# date : 2016-06-30 
-# date last modified : 2019-04-29
-
-# ===================================================================================
-# script : qd_02_sam2eachpos_perCDS.pl
-
-# Ce script travaille sur les CDS présents dans un fichier fasta. Il découpe le fichier 
-# SAM SORTED passé en entrée, en un fichier SAM par CDS. Puis il parse pour chaque CDS,
-# le fichier SAM associé en fichier EACHPOS (pos, cov, nbBE). Il parse le fichier SAM
-# pour calculer à chaque position du CDS, la couverture (cov) et le nombre de reads qui
-# commencent ou finissent de mapper à cette position (nbBE). 
-# Si les positions des exons sont connues sur le CDS, alors on les renseigne en mettant 
-# un "1" dans la colonne "EE" du fichier EACHPOS ("1" quand extrémité d'exon). 
-
-### 
-# DETAIL CALCUL DES POSITIONS DE DEBUT ET DE FIN DE MAPPING D UN READ SUR LA REFERENCE 
-# La position de debut de mapping du read sur la ref/transcript est donnée dans la colonne 2 du SAM.
-# La position de fin du mapping du read sur la ref est calculée avec le code CIGAR qui decrit l'alignement du read sur la reference. On compte le nb de match ou mismatch (M) et le nb de deletion (D) et on les ajoute à la position de début de mapping du read sur la reference.
-#
-# Exemple M : 	REF :  XXXXCCCGTCTATAGCATCGGTAAXXXX
-#													 ||||||||||| ||||||||
-#						  	READ:	     CCCGTCTATAGAATCGGTAA         CIGAR : 20M
-# 
-# Exemple D:	REF :  XXXXCCCGTCTAGCATACGCATGAXXXX
-#								         ||||||||-|||||||||||
-#				    	READ:	     CCCGTCTA*CATACGCATGA         CIGAR : 8M 1D 11M 
-# 
-# Exemple I:	REF :  XXXXCCCGTCTAG**CATACGCATGAXXXX
-#								         |||||||||  |||||||||||
-#				    	READ:	     CCCGTCTAGATCATACGCATGA		 CIGAR : 9M 2I 11M
-# 
-# Exemple N:	REF :  AGCTAGCATCGTGTCGCCCGTCTAGCATACGCATGATCGACTGTCAGCTAGTCAGACTAGTCGATC
-#										           |||||||||...................................|||||||||
-#					    READ:	           GTGTAACCC...................................GACTAGTCG
-# 																		 CIGAR : 9M 35N 9M 
-#				=> pas pris en compte dans le script
-# 				TODO : checker si on a des formats CIGAR avec des N 
-# 				cut -f 6 <_clean.sam> | sort | uniq | grep -e N 
-#
-# Exemple S:	REF :  XXXXXXATCGTGTCGCCCGTCTAGCATACXXXXXXXXXX
-#									    ||||||||||||||||
-#					    READ:	       gggGTGTCGCCC-TCTAGCgggg	 CIGAR : 3S 9M 1D 6M 4S
-# Note : La colonne 4 du sam (position de début du mapping) tient déjà compte des 'Soft Clipped' (S). La position 
-# de debut sur la ref commence bien au 'G' dans l'exemple ci-dessous, donc on n'a pas à se préoccuper de cette info. 
-
-# TODO : 
-	# format SAM : 
-	# 		- checker les flags de la col 2 du SAM 
-	# 		- meilleure prise en compte du format CIGAR (verif si cas avec des N ) et checker sur plusieurs ex
-# ===================================================================================
-
-
 
 
 
