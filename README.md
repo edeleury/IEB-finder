@@ -86,7 +86,7 @@ head -3 test.csv
 #### Step 2 : Mapping genomic reads on CDS sequences
 
 
-Genomic reads must be aligned on CDS sequences by allowing the reads not to align over its entire length with your favorite mapper. For example, here we give the command lines using BOWTIE2 (Langmead et al. 2012) with the *local* option. The *genomicReads.fq* is not provided. Only the output alignment file is provided for the rest of our example.
+Genomic reads must be aligned on CDS sequences by allowing the reads not to align over its entire length with your favorite mapper. For example, here we give the command lines using BOWTIE2 (Langmead et al. 2012) with the *local* option.
 
 
 *Example of mapping with BOWTIE2:*
@@ -102,7 +102,7 @@ perl $WORKDIR/bin/sup/qd_count_nbreads_per_ref.pl  bowtie2_align.sam
 wc -l NbReadsPerTargets.csv   # 6 covered CDS
 # for the next step, the sam file must be sorted
 samtools view -bS -o bowtie2_align.bam bowtie2_align.sam
-samtools  sort  bowtie2_align.bam  bowtie2_align.sorted
+samtools sorti -o bowtie2_align.sorted.bam bowtie2_align.bam
 samtools view -h -o bowtie2_align.sorted.sam bowtie2_align.sorted.bam
 # clean
 rm bowtie2_align.sam bowtie2_align.bam bowtie2_align.sorted.bam CDS.*
